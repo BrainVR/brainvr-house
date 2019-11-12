@@ -7,7 +7,7 @@
 ***TEST HEADER***
 
 ---TEST HEADER---
-Time; TestPhase; PlayerPosition; ObjectName; Action; RightWrong; Trajectory;Time;
+Time; TestPhase; PlayerPosition; ObjectName; Action; RightWrong; Deviation; Trajectory; Time;
 82.1576;fetch;(-3.705761, 1.155, -21.33609);ITEM_GIRAFFE;picked;True;0;26.8;3.6;
 86.3275;fetch;(-6.986652, 1.155, -20.32486);ITEM_PAINTINGS;picked;True;0;4.6;4.2;
 108.4685;placement;(1.030433, 1.640661, -3.834379);ITEM_PAINTINGS;dropped;True;0.5;35.9;22.1;
