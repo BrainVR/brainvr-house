@@ -11,11 +11,11 @@ preprocess_house <- function(obj){
   return(obj)
 }
 
-
 preprocess_house_experiment <- function(obj, language = "CZ"){
   exp <- get_experiment_log(obj)
   exp$RightWrong <- exp$RightWrong == "True"
   colnames(exp)[colnames(exp) == "Time.1"] <- "Duration"
+  if(!("Trial" %in% colnames(exp))) exp <- add_trial_column_experiment_log(exp)
   if(!has_item_codes(obj)){
     exp$ObjectName <- convert_name_to_item_code(exp$ObjectName, language)
   }
@@ -23,19 +23,18 @@ preprocess_house_experiment <- function(obj, language = "CZ"){
   return(obj)
 }
 
-preprocess_house_results <- function(obj, language){
+preprocess_house_results <- function(obj){
   res <- get_results_log(obj)
-  if(!is.null(res)){
-    if(!("TestCycle" %in% colnames(res)) & nrow(res) > 0) res$TestCycle <- 1:nrow(res)
-    res <- remove_parentheses_columns(res, c("TaskItemsList", "ItemsCollectedList", "AdditionalItemsList",
-                                             "MissingItemsList", "PlacementItemsList", "PlacementItemsDistances",
-                                             "PlacementItemsTimes", "PlacementItemsTrajectories"))
-    if(!has_item_codes(obj)){
-      res$MissingItemsList <- convert_strings_to_item_codes(res$MissingItemsList, language)
-      res$AdditionalItemsList <- convert_strings_to_item_codes(res$AdditionalItemsList, language)
-    }
-    obj$data$results_log$data <- res
+  if(is.null(res)) return(obj)
+  if(!("Trial" %in% colnames(res)) & nrow(res) > 0) res$Trial <- 1:nrow(res)
+  res <- remove_parentheses_columns(res, c("TaskItemsList", "ItemsCollectedList", "AdditionalItemsList",
+                                           "MissingItemsList", "PlacementItemsList", "PlacementItemsDistances",
+                                           "PlacementItemsTimes", "PlacementItemsTrajectories"))
+  if(!has_item_codes(obj)){
+    res$MissingItemsList <- convert_strings_to_item_codes(res$MissingItemsList, language)
+    res$AdditionalItemsList <- convert_strings_to_item_codes(res$AdditionalItemsList, language)
   }
+  obj$data$results_log$data <- res
   return(obj)
 }
 
@@ -70,4 +69,15 @@ remove_parentheses_columns <- function(df, columns){
 
 remove_parentheses <- function(strings){
   return(gsub("[()]","", strings))
+}
+
+
+add_trial_column_experiment_log <- function(exp_log){
+  ## Adds trial numbers - last placement signifies next trial
+  rl <- rle(exp_log$TestPhase)
+  i_placement <- which(rl$values == "placement")
+  # sums lengths of fetch and placement
+  trial_lenghts <- sapply(i_placement, function(x){return(rl$lengths[x] + rl$lengths[x-1])})
+  exp_log$Trial <- rep(1:length(trial_lenghts), trial_lenghts)
+  return(exp_log)
 }
