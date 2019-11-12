@@ -5,8 +5,8 @@ preprocess_house <- function(obj){
   #' The has_item_codes is currently deduced form experiment log, which is processed
   #' and thus adds them - results then thinks that codes are present and wouldn't process
   #' properly
-  obj <- preprocess_house_results(obj, language)
-  obj <- preprocess_house_experiment(obj, language)
+  obj <- preprocess_house_results(obj)
+  obj <- preprocess_house_experiment(obj)
   class(obj) <- append("house", class(obj))
   return(obj)
 }
