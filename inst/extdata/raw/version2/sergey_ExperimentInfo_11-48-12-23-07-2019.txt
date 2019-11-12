@@ -1,0 +1,39 @@
+***SESSION HEADER***
+{
+  "Participant": "sergey",
+  "Timestamp": "11-48-12-23-07-2019"
+}
+---SESSION HEADER---
+***EXPERIMENT INFO***
+{
+  "Participant": {
+    "Id": "sergey",
+    "Age": 33,
+    "Sex": 0,
+    "Group": 0
+  },
+  "Settings": {
+    "settings": [
+      "name: EMT",
+      "delay: True",
+      "delayTime: 6",
+      "generateLogs: True",
+      "restartPlayer: True",
+      "randomUniqueItems: True",
+      "randomUniquePlaces: True",
+      "randomGoal: True",
+      "randomGoalItems: 2",
+      "randomGoalIncrement: 1",
+      "tasks: generated"
+    ]
+  },
+  "CameraInfo": {
+    "FieldOfView": 60.0,
+    "FacClipPlane": 250.0
+  },
+  "ScreenInfo": {
+    "Height": 1080.0,
+    "Width": 1920.0
+  }
+}
+---EXPERIMENT INFO---

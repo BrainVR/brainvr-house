@@ -1,0 +1,13 @@
+***SESSION HEADER***
+{
+  "Participant": "martinek",
+  "Timestamp": "09-49-48-21-05-2019"
+}
+---SESSION HEADER---
+***TEST HEADER***
+
+---TEST HEADER---
+Time Finished; Task items; Task items list; Items collected; Items collected list; Additional items; Additional items list; Missing items; Missing items list; Placement time; Placement trajectory; Placement items list; Placement items order errors; Placement items distance errors; Placement items distances; Placement items times; Placement items trajectories;
+260.8476;2;(Kukuřice,Míč);2;(Kukuřice,Míč);0;();0;();72.37;104.47;(Míč,Kukuřice,Míč);2;1;(0.42,21.85,-1);(35.69,14.19,27.9);(41.37,2.56,62.62);
+1113.8030;3;(Hranolky,Vodovky,Dinosaurus);3;(Hranolky,Vodovky,Dinosaurus);0;();0;();258.41;139.56;(Hranolky,Vodovky,Dinosaurus);0;2;(6.91,1.07,27.27);(147.48,110.42,27.14);(63.94,75.51,15.15);
+4146.6250;Experiment Ended;

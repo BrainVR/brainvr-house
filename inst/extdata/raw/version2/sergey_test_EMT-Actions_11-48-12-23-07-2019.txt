@@ -1,0 +1,54 @@
+***SESSION HEADER***
+{
+  "Participant": "sergey",
+  "Timestamp": "11-48-14-23-07-2019"
+}
+---SESSION HEADER---
+***TEST HEADER***
+
+---TEST HEADER---
+Time; TestPhase; PlayerPosition; ObjectName; Action; RightWrong; Trajectory;Time;
+82.1576;fetch;(-3.705761, 1.155, -21.33609);ITEM_GIRAFFE;picked;True;0;26.8;3.6;
+86.3275;fetch;(-6.986652, 1.155, -20.32486);ITEM_PAINTINGS;picked;True;0;4.6;4.2;
+108.4685;placement;(1.030433, 1.640661, -3.834379);ITEM_PAINTINGS;dropped;True;0.5;35.9;22.1;
+116.1584;placement;(-3.328268, 1.640661, 3.190355);ITEM_GIRAFFE;dropped;True;0.5;10.8;7.7;
+198.9081;fetch;(-4.333381, 1.155, -20.83681);ITEM_PLASTICBOX;picked;True;0;92.7;82.8;
+200.8725;fetch;(-5.852616, 1.155, -20.79697);ITEM_LEMON;picked;True;0;1.5;2;
+202.4451;fetch;(-6.727063, 1.155, -20.89567);ITEM_TOMATO;picked;True;0;0.9;1.6;
+217.8013;placement;(6.332529, 1.640661, 1.239532);ITEM_PLASTICBOX;dropped;True;0.7;36.2;15.4;
+222.5519;placement;(5.067438, 1.640661, -1.739416);ITEM_TOMATO;dropped;True;1.8;4.6;4.7;
+225.3202;placement;(4.542202, 1.640661, -5.350166);ITEM_LEMON;dropped;True;0.7;3.9;2.8;
+318.8482;fetch;(-3.381739, 1.155, -20.29766);ITEM_PASTA;picked;True;0;171.8;93.5;
+320.3326;fetch;(-5.290267, 1.155, -20.09924);ITEM_PANTS;picked;True;0;1.9;1.5;
+323.6639;fetch;(-9.649388, 1.155, -20.10247);ITEM_BOX;picked;True;0;4.4;3.3;
+328.3114;fetch;(-4.64106, 1.155, -20.17197);ITEM_SPEAKER;picked;True;0;5;4.6;
+338.2341;placement;(-0.1486368, 1.640661, 7.324974);ITEM_SPEAKER;dropped;True;0.9;30.7;9.9;
+367.2222;placement;(-4.036895, 1.640661, -4.222101);ITEM_PASTA;dropped;True;0.8;20.7;29;
+381.6056;placement;(-14.38157, 1.288661, 13.68062);ITEM_PANTS;dropped;True;0.5;42;14.4;
+391.3033;placement;(6.182434, 1.640661, 1.365643);ITEM_BOX;dropped;True;0.5;30;9.7;
+509.2951;fetch;(-2.617923, 1.155, -20.86509);ITEM_PANTS;picked;True;0;191.9;118;
+511.0245;fetch;(-4.770746, 1.155, -21.04058);ITEM_AIRPLANE;picked;True;0;2.2;1.7;
+512.3284;fetch;(-5.379438, 1.155, -20.84287);ITEM_CONE;picked;True;0;0.6;1.3;
+516.6436;fetch;(-11.70942, 1.155, -20.67623);ITEM_CORN;picked;True;0;6.6;4.3;
+552.8779;fetch;(-8.177598, 1.155, -20.90032);ITEM_POT;picked;True;0;13.9;36.2;
+570.8300;placement;(-3.806652, 1.640661, 3.195236);ITEM_AIRPLANE;dropped;True;0.6;35.3;17.9;
+588.8480;placement;(-2.385906, 1.640661, -4.277678);ITEM_CONE;dropped;True;0.8;28.1;18;
+601.8740;placement;(4.83196, 1.640661, -5.631794);ITEM_PANTS;dropped;True;0.5;19.5;13;
+617.6279;placement;(-3.319372, 1.640661, 3.186382);ITEM_CORN;dropped;True;0.6;16.5;15.7;
+624.8774;placement;(-11.28365, 1.155, 0.6472931);ITEM_POT;dropped;True;0.8;20.5;7.3;
+806.0127;fetch;(-3.846436, 1.155, -20.8076);ITEM_CHIPS;picked;False;0;329.4;181.1;
+809.7981;fetch;(-7.895488, 1.155, -20.4214);ITEM_BOOK;picked;True;0;5.3;3.8;
+814.1938;fetch;(-11.37139, 1.155, -21.29024);ITEM_DINOSAUR;picked;True;0;3.6;4.4;
+823.3204;fetch;(-12.15619, 1.155, -20.78564);ITEM_MUSTARD;picked;True;0;1;9.1;
+827.4197;fetch;(-12.15619, 1.155, -20.78564);ITEM_KETCHUP;picked;True;0;0;4.1;
+840.1762;fetch;(-8.472174, 1.155, -20.80106);ITEM_JARSUGAR;picked;True;0;13;12.8;
+908.1786;placement;(-4.421396, 1.640661, -4.45038);ITEM_MUSTARD;dropped;False;20.7;44.1;68;
+926.6849;placement;(5.589252, 1.640661, -5.144836);ITEM_DINOSAUR;dropped;False;0.3;23.7;18.5;
+931.6840;placement;(5.589252, 1.640661, -5.144836);ITEM_KETCHUP;dropped;False;12.9;0;5;
+966.9162;placement;(-4.314275, 1.155, 16.20531);ITEM_MUSTARD;dropped;False;14;88.3;35.2;
+985.6683;placement;(-4.0505, 1.640661, -4.324451);ITEM_CHIPS;dropped;False;12.2;45.8;18.7;
+997.6754;placement;(13.27172, 1.155, -0.4023628);ITEM_KETCHUP;dropped;False;19.4;33;12;
+1034.3570;placement;(13.24689, 1.155, 0.2353115);ITEM_BOOK;dropped;False;-1;57.3;36.7;
+1049.9620;placement;(-16.13864, 1.24158, -4.568804);ITEM_KETCHUP;dropped;False;-1;46.3;15.6;
+1085.0550;placement;(6.445263, 1.640661, 0.986145);ITEM_JARSUGAR;dropped;False;-1;47.6;35.1;
+1088.7090;placement;(-2.277557, 1.640661, 5.498377);ITEM_DINOSAUR;dropped;False;-1;11.2;3.7;

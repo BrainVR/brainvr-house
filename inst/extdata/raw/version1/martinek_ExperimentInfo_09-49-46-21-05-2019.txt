@@ -1,0 +1,39 @@
+***SESSION HEADER***
+{
+  "Participant": "martinek",
+  "Timestamp": "09-49-46-21-05-2019"
+}
+---SESSION HEADER---
+***EXPERIMENT INFO***
+{
+  "Participant": {
+    "Id": "martinek",
+    "Age": 47,
+    "Sex": 1,
+    "Group": 0
+  },
+  "Settings": {
+    "settings": [
+      "name: EMT",
+      "delay: True",
+      "delayTime: 6",
+      "generateLogs: True",
+      "restartPlayer: True",
+      "randomUniqueItems: True",
+      "randomUniquePlaces: True",
+      "randomGoal: False",
+      "randomGoalItems: 0",
+      "randomGoalIncrement: 0",
+      "tasks: C:/Users/Uzivatel/Desktop/Stacionář Karviná/dům/brians_Data/../ExperimentTasks/testEMT.json"
+    ]
+  },
+  "CameraInfo": {
+    "FieldOfView": 60.0,
+    "FacClipPlane": 250.0
+  },
+  "ScreenInfo": {
+    "Height": 1080.0,
+    "Width": 1920.0
+  }
+}
+---EXPERIMENT INFO---

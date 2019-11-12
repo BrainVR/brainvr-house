@@ -1,0 +1,21 @@
+***SESSION HEADER***
+{
+  "Participant": "martinek",
+  "Timestamp": "09-49-48-21-05-2019"
+}
+---SESSION HEADER---
+***TEST HEADER***
+
+---TEST HEADER---
+Time; TestPhase; PlayerPosition; ObjectName; Action; RightWrong; Trajectory;Time;
+178.9521;fetch;(-2.24665, 1.155, -20.41038);ITEM_CORN;picked;True;0;25.7;15.2;
+183.0643;fetch;(-2.880367, 1.155, -20.06862);ITEM_BALL;picked;True;0;0.7;4.1;
+218.7494;placement;(-3.905843, 1.155, 16.97836);ITEM_BALL;dropped;False;0.4;41.4;35.7;
+232.9401;placement;(-2.424398, 1.155, 19.06614);ITEM_CORN;dropped;False;21.8;2.6;14.2;
+260.8395;placement;(6.319677, 1.640661, 0.5700073);ITEM_BALL;dropped;False;-1;62.6;27.9;
+821.7996;fetch;(-6.181761, 1.155, -20.82339);ITEM_PAINTINGS;picked;True;0;382.4;560.9;
+824.1981;fetch;(-6.181761, 1.155, -20.82339);ITEM_FRIES;picked;True;0;0;2.4;
+828.7816;fetch;(-9.017298, 1.155, -20.32325);ITEM_DINOSAUR;picked;True;0;2.9;4.6;
+976.2535;placement;(-3.238487, 2.172403, -4.410007);ITEM_FRIES;dropped;False;6.9;63.9;147.5;
+1086.6790;placement;(-16.85083, 1.24158, -3.179461);ITEM_PAINTINGS;dropped;True;1.1;75.5;110.4;
+1113.8010;placement;(-20.16883, 1.155, -9.068686);ITEM_DINOSAUR;dropped;False;27.3;15.2;27.1;
