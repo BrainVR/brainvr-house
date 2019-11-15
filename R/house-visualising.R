@@ -21,3 +21,11 @@ geom_items <- function(df_items){
                        fontface = "bold", colour = "white"))
   return(res)
 }
+
+geom_item_spawn_locations <- function(){
+   res <- list(geom_point(data = item_spawn_locations, aes(x, y, size = 2)),
+             geom_label(data = item_spawn_locations, aes(x, y, label = name, color = "blue"),
+                       position = position_jitter(width=1, height=1),
+                       fontface = "bold", colour = "white"))
+   return(res)
+}
