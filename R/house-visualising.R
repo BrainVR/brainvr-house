@@ -15,8 +15,8 @@ plot_trial_path.house <- function(obj, i_trial, background = FALSE, background_t
 
 
 geom_items <- function(df_items){
-  res <- list(geom_point(data = df_items, aes(x, y, color = correct, size = 2)),
-             geom_label(data = df_items, aes(x, y, label = name, fill = correct),
+  res <- list(geom_point(data = df_items, aes(x, y, color = RightWrong, size = 2)),
+             geom_label(data = df_items, aes(x, y, label = ObjectName, fill = RightWrong),
                        position = position_jitter(width=1, height=1),
                        fontface = "bold", colour = "white"))
   return(res)

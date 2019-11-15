@@ -22,9 +22,23 @@ get_items_placement_positions <- function(obj, i_trials = c()){
   exp_log <- get_trial_experiment_log.house(obj, i_trials)
   exp_log <- exp_log[exp_log$TestPhase == "placement", ]
   #puts it in a matrix by columns
-  positions <- as.data.frame(t(sapply(exp_log$PlayerPosition, unity_vector_to_numeric, USE.NAMES = F)))
-  colnames(positions) <- c("x", "z", "y")
-  positions$correct <- exp_log$RightWrong
-  positions$name <- exp_log$ObjectName
+  positions <- exp_log[, c("x", "z", "y", "RightWrong", "ObjectName")]
   return(positions)
+}
+
+get_item_correct_location <- function(location, deviation){
+  # calculates distances
+  distances <- apply(item_spawn_locations[, c("x", "y")], 1, navr::euclid_distance, location)
+  i_location <- which((distances - abs(deviation))  < 1.2)
+  if(length(i_location) == 0){
+    warning("No location is deviated ", deviation, " from given location")
+    return(NULL)
+  }
+  if(length(i_location) > 1){
+    warning("More than one location is deviated ", deviation, " from given location")
+    return(NULL)
+  }
+  location <- list(location = item_spawn_locations$location[i_location],
+                   position = item_spawn_locations[i_location, c("x", "y")])
+  return(location)
 }

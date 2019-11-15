@@ -25,6 +25,8 @@ preprocess_house_experiment <- function(obj, language = "CZ"){
   if(!has_item_codes(obj)){
     exp$ObjectName <- convert_name_to_item_code(exp$ObjectName, language)
   }
+  positions <- as.data.frame(t(sapply(exp$PlayerPosition, unity_vector_to_numeric, USE.NAMES = F)))
+  exp[, c("x", "z", "y")] <- positions
   obj$data$experiment_log$data <- exp
   return(obj)
 }
