@@ -7,7 +7,13 @@ preprocess_house <- function(obj){
   #' properly
   obj <- preprocess_house_results(obj)
   obj <- preprocess_house_experiment(obj)
+  obj <- preprocess_house_position(obj)
   class(obj) <- append("house", class(obj))
+  return(obj)
+}
+
+preprocess_house_position <- function(obj){
+  obj$data$position$area_boundaries <- AREA_BOUNDARIES
   return(obj)
 }
 
