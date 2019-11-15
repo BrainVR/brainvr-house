@@ -1,11 +1,16 @@
 #' @importFrom brainvr.reader plot_trial_path
 plot_trial_path.house <- function(obj, i_trial, background = FALSE, background_type = "topdown", custom_background = NULL, ...){
   navr_obj <- get_trial_position(obj, i_trial)
-  plt <- navr::plot_path(navr_obj)
-  plt <- plt + navr::geom_navr_limits(navr_obj)
+  g <- ggplot() + geom_navr_limits(navr_obj)+ theme_void()
+  if(background){
+    if(background_type == "topdown") background_path <- BACKGROUND_TOPDOWN_PATH
+    if(!is.null(custom_background)) background_path <- custom_background
+    g <- g + geom_navr_background(background_path, xlim=AREA_BOUNDARIES$x, ylim = AREA_BOUNDARIES$y)
+  }
+  g <- g + geom_navr_path(navr_obj, ...)
   df_placed <- get_items_placement_positions(obj, i_trial)
-  plt <- plt + geom_items(df_placed)
-  return(plt)
+  g <- g + geom_items(df_placed)
+  return(g)
 }
 
 
