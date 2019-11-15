@@ -1,5 +1,5 @@
 #' @importFrom brainvr.reader plot_trial_path
-plot_trial_path.house <- function(obj, i_trial){
+plot_trial_path.house <- function(obj, i_trial, background = FALSE, background_type = "topdown", custom_background = NULL, ...){
   navr_obj <- get_trial_position(obj, i_trial)
   plt <- navr::plot_path(navr_obj)
   plt <- plt + navr::geom_navr_limits(navr_obj)
