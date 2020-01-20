@@ -35,7 +35,7 @@ preprocess_house_experiment <- function(obj, language = "CZ"){
 #' renames experiment log columns so all abide by the same standard
 rename_experiment_log_columns <- function(obj){
   exp <- get_experiment_log(obj)
-  exp <-  rename_columns(exp, column_names_convertor)
+  exp <-  rename_columns(exp, experiment_log_column_names_convertor)
   obj$data$experiment_log$data <- exp
 }
 

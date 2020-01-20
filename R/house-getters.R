@@ -2,13 +2,14 @@
 get_trial_times.house <- function(obj, i_trial){
   results_trial <- obj$data$results_log$data[obj$data$results_log$data$Trial == i_trial, ]
   # First action in the trial
-  exp_trial <- get_trial_experiment_log.house(obj, i_trial)[1, ]
+  exp_trial <- get_trial_experiment_log.house(obj, i_trial)
+
   # This is kinda weird and I hope it actually works
   # Because there is no record of trial starting, I calculate it as athe time of the
   # first action minus duration to that action
-  return(list(waitingToStart = exp_trial$Time - exp_trial$Duration,
-              start = exp_trial$Time - exp_trial$Duration,
-              end = results_trial$TimeFinished))
+  return(list(waitingToStart = exp_trial$Time[1] - exp_trial$Duration[1],
+              start = exp_trial$Time[1] - exp_trial$Duration[1],
+              end = tail(exp_trial$Time, 1)))
 }
 
 get_trial_experiment_log.house <- function(obj, i_trials = c()){
