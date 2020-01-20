@@ -19,6 +19,7 @@ preprocess_house_position <- function(obj){
 
 preprocess_house_experiment <- function(obj, language = "CZ"){
   exp <- get_experiment_log(obj)
+  exp <- rename_experiment_log_columns(obj)
   exp$RightWrong <- exp$RightWrong == "True"
   colnames(exp)[colnames(exp) == "Time.1"] <- "Duration"
   if(!("Trial" %in% colnames(exp))) exp <- add_trial_column_experiment_log(exp)
@@ -29,6 +30,13 @@ preprocess_house_experiment <- function(obj, language = "CZ"){
   exp[, c("x", "z", "y")] <- positions
   obj$data$experiment_log$data <- exp
   return(obj)
+}
+
+#' renames experiment log columns so all abide by the same standard
+rename_experiment_log_columns <- function(obj){
+  exp <- get_experiment_log(obj)
+  exp <-  rename_columns(exp, column_names_convertor)
+  obj$data$experiment_log$data <- exp
 }
 
 preprocess_house_results <- function(obj){
@@ -79,13 +87,21 @@ remove_parentheses <- function(strings){
   return(gsub("[()]","", strings))
 }
 
+#' renames columns as per conversion table. Conversion table is a data.frame
+#' with old_name and new_name columns
+rename_columns <- function(df, conversion_table){
+  iRenames <- which(colnames(df) %in% conversion_table$old_name)
+  colnames(df)[iRenames] <- conversion_table$new_name
+  return(df)
+}
 
 add_trial_column_experiment_log <- function(exp_log){
   ## Adds trial numbers - last placement signifies next trial
   rl <- rle(exp_log$TestPhase)
   i_placement <- which(rl$values == "placement")
-  # sums lengths of fetch and placement
-  trial_lenghts <- sapply(i_placement, function(x){return(rl$lengths[x] + rl$lengths[x-1])})
+  i_start <- c(1, i_placement[1:length(i_placement)-1] + 1) #starts for each test_phase
+  # sums lengths of phases between two placements
+  trial_lenghts <- sapply(1:length(i_placement), function(x){return(sum(rl$lengths[i_start[x]:i_placement[x]]))})
   exp_log$Trial <- rep(1:length(trial_lenghts), trial_lenghts)
   return(exp_log)
 }

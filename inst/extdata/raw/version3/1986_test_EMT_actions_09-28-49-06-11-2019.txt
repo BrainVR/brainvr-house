@@ -1,0 +1,79 @@
+***SESSION HEADER***
+{
+  "Participant": "1986",
+  "Timestamp": "09-28-49-06-11-2019"
+}
+---SESSION HEADER---
+***TEST HEADER***
+
+---TEST HEADER---
+Timestamp;Test_phase;Player_possition;Object_name;Action;Right_action;Object_possition;Placement_deviation;Action_trajectory;Action_time;
+42.2054;pickup;(-2.43996, 1.640661, -3.865494);ITEM_CABBAGE;picked;True;(-4.1, 1.3, -3.2);0;43.9;11.4;
+51.4689;pickup;(-1.986427, 1.640661, -1.740885);ITEM_TOMATO;picked;True;(-3.1, 1.0, -0.9);0;9.4;9.3;
+63.7512;collection;(-1.500043, 1.155, -20.53424);ITEM_CABBAGE;picked;True;(-3.0, 0.1, -18.9);0;23.5;3.7;
+66.5059;collection;(-3.164677, 1.155, -19.75033);ITEM_TOMATO;picked;True;(-5.0, 0.1, -18.9);0;1.8;2.8;
+87.5108;placement;(-2.981603, 1.640661, -4.268259);ITEM_CABBAGE;dropped;True;(-3.5, 1.9, -3.6);0.3;17.2;14.8;
+106.7238;placement;(-3.660003, 1.854894, -1.445236);ITEM_TOMATO;dropped;True;(-3.4, 1.7, -1.0);0.3;14.5;19.2;
+125.2182;pickup;(-3.616031, 1.640661, 3.033804);ITEM_BANANA;picked;True;(-4.9, 1.5, 3.8);0;52.2;13.4;
+141.9764;pickup;(-16.28256, 1.284661, -4.667252);ITEM_POT;picked;True;(-16.4, 0.2, -2.3);0;44.6;16.8;
+158.1057;pickup;(5.349079, 1.640661, -3.281673);ITEM_BROCCOLI;picked;True;(6.7, 1.1, -4.4);0;40.8;16.1;
+169.4639;collection;(-2.139619, 1.155, -20.77446);ITEM_BANANA;picked;True;(-3.1, 0.2, -18.9);0;22.9;4.1;
+171.8912;collection;(-4.749749, 1.155, -21.00697);ITEM_POT;picked;True;(-5.0, 0.1, -18.9);0;3.2;2.4;
+174.3103;collection;(-4.749749, 1.155, -21.00697);ITEM_BROCCOLI;picked;True;(-6.0, 0.1, -18.9);0;0;2.4;
+192.1232;placement;(-4.204963, 1.640661, 3.027428);ITEM_BANANA;dropped;True;(-4.6, 1.8, 3.7);0.6;25.5;13.3;
+207.7353;placement;(-15.8553, 1.280513, -7.387152);ITEM_POT;dropped;False;(-15.9, 1.4, -6.6);3.5;39.2;15.6;
+226.1686;placement;(4.883878, 1.640661, -3.334887);ITEM_BROCCOLI;dropped;True;(5.7, 1.9, -3.7);0.4;42.1;18.4;
+242.3376;pickup;(13.84023, 1.155, 0.03952599);ITEM_BOOK;picked;True;(15.5, 0.1, -0.5);0;51.6;12.3;
+256.6903;pickup;(0.02372837, 1.640661, 7.33197);ITEM_AIRPLANE;picked;True;(-0.4, 1.7, 8.4);0;40.7;14.3;
+270.4364;pickup;(5.054727, 1.640661, -2.676418);ITEM_LIQUIDSOAP;picked;True;(6.7, 1.1, -2.0);0;16.2;13.7;
+283.5323;collection;(-3.026237, 1.155, -19.90169);ITEM_BOOK;picked;True;(-4.0, 0.1, -18.9);0;24.6;5.8;
+285.0309;collection;(-3.026237, 1.155, -19.90169);ITEM_LIQUIDSOAP;picked;True;(-3.0, 0.1, -18.9);0;0;1.5;
+289.3069;collection;(-5.480913, 1.155, -19.95807);ITEM_AIRPLANE;picked;True;(-6.0, 0.1, -18.9);0;3.8;4.3;
+303.5337;placement;(13.13664, 1.155, 0.0290947);ITEM_BOOK;dropped;True;(13.9, 1.2, 0.0);1;25.3;8.2;
+339.2558;placement;(-4.168031, 1.640661, 3.08824);ITEM_LIQUIDSOAP;dropped;False;(-4.7, 1.9, 3.8);6.2;47.5;35.7;
+345.1818;placement;(-0.1398669, 1.640661, 7.327824);ITEM_AIRPLANE;dropped;False;(-0.3, 1.9, 8.2);13.2;9.4;5.9;
+368.2847;pickup;(5.161869, 1.640661, -2.452303);ITEM_PILLOW;picked;True;(6.7, 1.2, -2.1);0;62.3;14.2;
+388.1138;pickup;(-10.29833, 1.155, 1.004265);ITEM_FRIES;picked;True;(-12.0, 0.1, 0.1);0;24.2;19.8;
+399.1798;pickup;(0.4232092, 1.640661, 6.284298);ITEM_GLASS;picked;True;(-0.4, 1.6, 8.4);0;13.3;11.1;
+413.3031;collection;(-6.30849, 1.155, -19.62536);ITEM_PILLOW;picked;True;(-8.0, 0.2, -18.9);0;41.4;6.3;
+415.9082;collection;(-5.109441, 1.155, -20.25644);ITEM_GLASS;picked;True;(-7.0, 0.1, -18.9);0;3.4;2.6;
+417.7802;collection;(-5.109441, 1.155, -20.25644);ITEM_FRIES;picked;True;(-4.0, 0.1, -18.9);0;0;1.9;
+437.2895;placement;(5.91481, 1.640661, -2.201023);ITEM_PILLOW;dropped;True;(6.4, 1.5, -2.2);0.2;26.3;14.9;
+451.1902;placement;(-11.22219, 1.155, -0.9483032);ITEM_FRIES;dropped;True;(-11.5, 1.0, -0.5);0.3;31.7;13.9;
+459.0113;placement;(0.06221867, 1.640661, 7.343731);ITEM_GLASS;dropped;True;(-0.2, 1.8, 8.1);0.6;16.9;7.8;
+476.7627;pickup;(-16.22626, 1.284661, -4.270496);ITEM_ORANGE;picked;True;(-16.4, 0.2, -2.3);0;60.6;14.2;
+489.3560;pickup;(-14.37437, 1.288661, 13.13246);ITEM_POT;picked;True;(-14.7, 0.7, 14.9);0;34.5;12.6;
+511.0220;pickup;(5.107649, 1.640661, -2.828602);ITEM_APPLE;picked;True;(6.7, 1.1, -2.1);0;34.4;21.7;
+516.0276;pickup;(5.107649, 1.640661, -2.828602);ITEM_TOWEL;picked;True;(6.7, 1.1, -4.4);0;0;5;
+528.3616;collection;(-6.029436, 1.155, -20.32892);ITEM_ORANGE;picked;True;(-8.0, 0.1, -18.9);0;27;4.9;
+533.0399;collection;(-4.946143, 1.155, -19.8127);ITEM_POT;picked;True;(-3.0, 0.1, -18.9);0;1.2;4.7;
+534.9473;collection;(-5.797601, 1.155, -20.7663);ITEM_APPLE;picked;True;(-6.0, 0.1, -18.9);0;1.3;1.9;
+536.3926;collection;(-5.797601, 1.155, -20.7663);ITEM_TOWEL;picked;True;(-7.0, 0.1, -18.9);0;0;1.4;
+558.6211;placement;(-16.1278, 1.284661, -6.716211);ITEM_ORANGE;dropped;False;(-16.0, 1.4, -6.0);2.9;26.4;16.7;
+575.4182;placement;(-14.55518, 1.288661, 13.57587);ITEM_POT;dropped;True;(-14.6, 1.4, 14.3);0.2;37.3;16.8;
+595.2635;placement;(5.982765, 1.640661, -2.188723);ITEM_APPLE;dropped;True;(6.5, 1.5, -2.1);0.3;37;19.8;
+598.4355;placement;(5.765071, 1.640661, -3.605669);ITEM_TOWEL;dropped;True;(6.4, 1.6, -3.9);0.3;1.7;3.2;
+620.7767;pickup;(-1.149715, 1.650664, 5.541361);ITEM_PLANT;picked;True;(-3.4, 0.6, 5.5);0;50.7;16;
+631.8171;pickup;(-1.987447, 1.640661, -1.824827);ITEM_CABBAGE;picked;True;(-3.1, 1.0, -0.9);0;11.3;11;
+654.0668;pickup;(-10.51243, 1.155, -0.01735687);ITEM_LIQUIDSOAP;picked;True;(-12.1, 0.1, 0.0);0;23.3;22.3;
+667.0653;pickup;(-2.65365, 1.64034, -4.034246);ITEM_EGGPLANT;picked;True;(-3.0, 1.4, -6.3);0;26.1;13;
+684.7998;collection;(-8.024102, 1.155, -20.30833);ITEM_PLANT;picked;True;(-9.0, 0.1, -18.9);0;29.1;9.6;
+693.3456;collection;(-8.024102, 1.155, -20.30833);ITEM_CABBAGE;picked;True;(-10.0, 0.1, -18.9);0;0;8.5;
+695.5313;collection;(-8.024102, 1.155, -20.30833);ITEM_EGGPLANT;picked;True;(-6.0, 0.2, -18.9);0;0;2.2;
+702.2503;collection;(-4.382545, 1.155, -19.61038);ITEM_LIQUIDSOAP;picked;True;(-3.0, 0.1, -18.9);0;3.9;6.7;
+725.7977;placement;(-1.478633, 1.640661, 5.535412);ITEM_PLANT;dropped;True;(-2.1, 1.6, 5.5);0.7;24.7;16.9;
+737.4165;placement;(-2.365468, 1.640661, -1.448547);ITEM_CABBAGE;dropped;True;(-2.8, 1.5, -1.1);0.2;16.4;11.6;
+751.5239;placement;(-10.90957, 1.155, 0.3640594);ITEM_LIQUIDSOAP;dropped;True;(-11.4, 1.1, 0.1);0.2;26.3;14.1;
+761.9025;placement;(-2.881111, 1.640661, 2.906162);ITEM_EGGPLANT;dropped;False;(-3.3, 1.9, 2.1);7.7;20.5;10.4;
+784.9909;pickup;(1.046806, 1.640661, 3.508221);ITEM_SPEAKER;picked;True;(3.2, 1.5, 4.0);0;52.6;12.1;
+801.5020;pickup;(3.88186, 1.640661, 6.628746);ITEM_ORANGE;picked;True;(5.9, 1.6, 6.5);0;5.9;16.5;
+806.7226;pickup;(0.7282287, 1.640661, 6.845654);ITEM_TOOTHBRUSH;picked;True;(-0.4, 1.6, 8.4);0;3.2;5.2;
+817.1125;pickup;(5.764682, 1.640661, -3.752665);ITEM_LEMON;picked;True;(6.7, 1.2, -4.4);0;13.9;10.4;
+832.0067;collection;(-6.363651, 1.155, -19.57501);ITEM_ORANGE;picked;True;(-8.0, 0.1, -18.9);0;26.8;7.4;
+835.3069;collection;(-5.87303, 1.155, -20.10197);ITEM_SPEAKER;picked;True;(-7.0, 0.1, -18.9);0;0.7;3.3;
+839.1880;collection;(-5.87303, 1.155, -20.10197);ITEM_TOOTHBRUSH;picked;True;(-6.0, 0.1, -18.9);0;0;3.9;
+841.6044;collection;(-8.721811, 1.155, -19.61015);ITEM_LEMON;picked;True;(-10.0, 0.1, -18.9);0;3;2.4;
+858.6465;placement;(1.781476, 1.640661, 3.137268);ITEM_SPEAKER;dropped;True;(2.5, 1.9, 3.6);0.1;20.4;10.6;
+867.8066;placement;(4.937675, 1.640661, 6.504841);ITEM_ORANGE;dropped;True;(5.7, 1.8, 6.5);0.7;10.8;9.2;
+873.4947;placement;(-0.1482325, 1.640661, 7.26553);ITEM_TOOTHBRUSH;dropped;True;(-0.2, 1.8, 8.1);0.5;6.6;5.7;
+887.3106;placement;(5.353923, 1.640661, -3.681837);ITEM_LEMON;dropped;True;(6.1, 1.8, -4.0);0.2;15;13.8;
