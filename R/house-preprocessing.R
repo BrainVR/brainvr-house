@@ -35,7 +35,7 @@ preprocess_house_experiment <- function(obj, language = "CZ"){
 #' renames experiment log columns so all abide by the same standard
 rename_experiment_log_columns <- function(obj){
   exp <- get_experiment_log(obj)
-  exp <-  rename_columns(exp, experiment_log_column_names_convertor)
+  exp <- rename_columns(exp, experiment_log_column_names_convertor)
   obj$data$experiment_log$data <- exp
 }
 
@@ -43,6 +43,7 @@ preprocess_house_results <- function(obj){
   res <- get_results_log(obj)
   if(is.null(res)) return(obj)
   if(!("Trial" %in% colnames(res)) & nrow(res) > 0) res$Trial <- 1:nrow(res)
+  res <- rename_columns(res, results_log_column_names_convertor)
   res <- remove_parentheses_columns(res, c("TaskItemsList", "ItemsCollectedList", "AdditionalItemsList",
                                            "MissingItemsList", "PlacementItemsList", "PlacementItemsDistances",
                                            "PlacementItemsTimes", "PlacementItemsTrajectories"))
