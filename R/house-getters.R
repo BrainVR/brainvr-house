@@ -18,12 +18,16 @@ get_trial_experiment_log.house <- function(obj, i_trials = c()){
   return(exp_log)
 }
 
-
 get_items_placement_positions <- function(obj, i_trials = c()){
   exp_log <- get_trial_experiment_log.house(obj, i_trials)
   exp_log <- exp_log[exp_log$TestPhase == "placement", ]
   #puts it in a matrix by columns
-  positions <- exp_log[, c("x", "z", "y", "RightWrong", "ObjectName")]
+  if(has_object_positions(exp_log)){
+    positions <- exp_log[, c("x", "z", "y", "RightWrong", "ObjectName")]
+  } else {
+    positions <- exp_log[, c("player_x", "player_z", "player_y", "RightWrong", "ObjectName")]
+    colnames(positions) <- c("x", "z", "y", "RightWrong", "ObjectName")
+  }
   return(positions)
 }
 

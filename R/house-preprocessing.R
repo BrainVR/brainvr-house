@@ -26,10 +26,19 @@ preprocess_house_experiment <- function(obj, language = "CZ"){
   if(!has_item_codes(obj)){
     exp$ObjectName <- convert_name_to_item_code(exp$ObjectName, language)
   }
-  positions <- as.data.frame(t(sapply(exp$PlayerPosition, unity_vector_to_numeric, USE.NAMES = F)))
+  player_positions <- as.data.frame(t(sapply(exp$PlayerPosition, unity_vector_to_numeric, USE.NAMES = F)))
+  exp[, c("player_x", "player_z", "player_y")] <- positions
+  positions <- as.data.frame(t(sapply(exp$ObjectPosition, unity_vector_to_numeric, USE.NAMES = F)))
   exp[, c("x", "z", "y")] <- positions
   obj$data$experiment_log$data <- exp
   return(obj)
+}
+
+#' Returns if the expeirment log has object positions
+#' The old house logs had only PLAYER positions of returned item,
+#' not the item position at the time of being dropped
+has_object_positions <- function(exp){
+  return("x" %in% colnames(exp))
 }
 
 #' renames experiment log columns so all abide by the same standard
@@ -100,7 +109,7 @@ add_trial_column_experiment_log <- function(exp_log){
   ## Adds trial numbers - last placement signifies next trial
   rl <- rle(exp_log$TestPhase)
   i_placement <- which(rl$values == "placement")
-  i_start <- c(1, i_placement[1:length(i_placement)-1] + 1) #starts for each test_phase
+  i_start <- c(1, i_placement[1:length(i_placement) - 1] + 1) #starts for each test_phase
   # sums lengths of phases between two placements
   trial_lenghts <- sapply(1:length(i_placement), function(x){return(sum(rl$lengths[i_start[x]:i_placement[x]]))})
   exp_log$Trial <- rep(1:length(trial_lenghts), trial_lenghts)
